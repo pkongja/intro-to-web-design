@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheets/site.css" />
+</head>
+<body>
+    <header>
+        <div id="banner" class="bg-secondary text-white text-center">
+            <p>Random Website Notification</p>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Formula 1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about_us.html">About Us</a>
+                    <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <br/>
+        <h1 >Contact Us</h1>
+        <hr/>
+
+        <article>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>Logo</th>
+                    <th>Team</th>
+                    <th>Country</th>
+                    <th>Principal</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src = "images/f1-logo.png" alt = "Logo 1"/>
+                    </td>
+                    <td>Ferrari</td>
+                    <td>Italy</td>
+                    <td>Fred Vasseur</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src = "images/f1-logo.png" alt = "Logo 2"/>
+                    </td>
+                    <td>Redbull</td>
+                    <td>England</td>
+                    <td>Christian Horner</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="logo" src = "images/f1-logo.png" alt = "Logo 3"/>
+                    </td>
+                    <td>Mercedes</td>
+                    <td>Germany</td>
+                    <td>Toto Wolff</td>
+                    <td>2023</td>
+                </tr>
+            </table>
+        </article>
+
+        <article>
+            <h2>General Inquiries</h2>
+            <form action="confirmation.html" id="contactForm">
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Name: *</label><br/>
+                    <input required type = "text" class="form-control" id="fullname" name = "fullname" placeholder="eg. john doe"/>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address: *</label><br/>
+                    <input required type = "email" class="form-control" id="email" name = "emailaddress" placeholder="eg. john@email.com"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Are you employed?</label><br/>
+                    <input id="yesEmployed" type = "radio" value="Y" name = "employed" class="form-check-input" /> 
+                        <label class="form-check-label" for="yesEmployed">
+                            Yes
+                        </label>
+                    <input id="noEmployed" type = "radio" value="N" name = "employed" class="form-check-input" /> 
+                        <label class="form-check-label" for="noEmployed">
+                            No
+                        </label>
+                </div>
+                <div class="mb-3">
+                    <label for="inquiry" class="form-label">State your inquiry *</label>
+                    <textarea required class="form-control" cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry"></textarea>
+                </div>
+
+                <input type="submit" class="btn btn-success" />
+                <button type="button" class="btn btn-warning" onclick="ClearForm()">Clear</button>
+            </form>
+        </article>
+    </main>
+
+    <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about_us.html" class="nav-link px-2 text-body-secondary">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact_us.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy
+            <a href = "https://www.f1.com" target = "_blank" class="nav-link">Formula 1</a>  
+        </p>
+    </footer>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
+</body>
+</html>
